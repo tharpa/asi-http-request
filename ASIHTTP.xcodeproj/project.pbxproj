@@ -19,6 +19,7 @@
 		502F0184147E50CE00710FDB /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B5FE752611DBBA6400F898C8 /* ASIDownloadCache.h */; settings = {ATTRIBUTES = (); }; };
 		502F0185147E50CE00710FDB /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = B53E6D921257B45800C1E79A /* ASIDataDecompressor.h */; settings = {ATTRIBUTES = (); }; };
 		502F0186147E50CE00710FDB /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = B53E6D941257B45800C1E79A /* ASIDataCompressor.h */; settings = {ATTRIBUTES = (); }; };
+		509781A01648394A00C220EF /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5097819F1648394A00C220EF /* libxml2.dylib */; };
 		52C1D8BF144D39DC00957EBF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B55252B311D22E2200F9B170 /* Reachability.m */; };
 		52C1D8C5144D39DC00957EBF /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A87C1103EC6F200300252 /* ASIAuthenticationDialog.m */; };
 		52C1D8C7144D39DC00957EBF /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = B522DACD1030B2AB009A2D22 /* ASIInputStream.m */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5097819F1648394A00C220EF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		52C1D8B2144D394500957EBF /* libASIHTTP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libASIHTTP.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50C1821121C26DB0055FCAB /* ClientCertificateTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientCertificateTests.h; sourceTree = "<group>"; };
 		B50C1822121C26DB0055FCAB /* ClientCertificateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientCertificateTests.m; sourceTree = "<group>"; };
@@ -168,7 +170,6 @@
 		B5FE752511DBBA6400F898C8 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
 		B5FE752611DBBA6400F898C8 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
 		B5FE752A11DBBA6A00F898C8 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
-		DADCEB9812D5057700958557 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
 		DADCEB9E12D505AB00958557 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = /usr/lib/libz.dylib; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				509781A01648394A00C220EF /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,8 +290,8 @@
 				B50C182B121C26FA0055FCAB /* Security.framework */,
 				B576D4C911C7CCA60059B815 /* SystemConfiguration.framework */,
 				B576D4C311C7CC9C0059B815 /* UIKit.framework */,
-				DADCEB9812D5057700958557 /* libxml2.dylib */,
 				DADCEB9E12D505AB00958557 /* libz.dylib */,
+				5097819F1648394A00C220EF /* libxml2.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
